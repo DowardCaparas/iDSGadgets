@@ -2,8 +2,8 @@
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export const navLinks = [
-    {url: '#home', label: 'Home' , imgICON: '${basePath}/home.svg'},
-    {url: '#products', label: 'Products', imgICON: '${basePath}/box.svg'},
+    {url: '#home', label: 'Home' , imgICON: `${basePath}/home.svg`},
+    {url: '#products', label: 'Products', imgICON: `${basePath}/box.svg`},
     {url: '#about', label: 'About Us', imgICON: '${basePath}/info.svg'},
     {url: '#blog', label: 'Blog', imgICON: '${basePath}/newspaper.svg'},
     {url: '#contact', label: 'Contact Us', imgICON: '${basePath}/phone.svg'},
@@ -55,7 +55,7 @@ export const footerLinks = [
             oldPrice: 830,
             description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer'
         },
-        deviceIMG: '${basePath}/images/xbox.png'
+        deviceIMG: `${basePath}/images/xbox.png`
     },
 
     {
