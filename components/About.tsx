@@ -6,7 +6,7 @@ const About = () => {
       <section className='w-full padding black_gradient relative' id='about'>
           <div className="flex-between max-lg:flex-col gap-4 mt-5">
                   <Image
-                      src='/images/iPadPro.png'
+                      src='${basePath}/images/iPadPro.png'
                       alt='laptop'
                       width={500}
                       height={450}

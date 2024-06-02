@@ -28,7 +28,7 @@ const Hero = () => {
               <div className='flex gap-4 mt-10 bg-zinc-800 p-5 rounded-md'>
                   <div className='flex justify-start items-start px-2'>
                       <Image
-                          src='/dollar.svg'
+                          src='${basePath}/dollar.svg'
                           alt='dollar icon'
                           width={35}
                           height={35}
@@ -45,7 +45,7 @@ const Hero = () => {
 
                   <div className='flex justify-start items-start px-2'>
                       <Image
-                          src='/wallet.svg'
+                          src='${basePath}/wallet.svg'
                           alt='wallet icon'
                           width={35}
                           height={35}
