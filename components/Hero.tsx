@@ -1,6 +1,6 @@
 import Image from 'next/legacy/image';
 import CustomButton from './CustomButton';
-import { wallet, dollar } from '@/public';
+import { wallet, dollar, play } from '@/public';
 
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
                       title='Watch Video'
                       textStyles='text-slate-200'
                       containerStyles='flex gap-2 p-2 hover:bg-primary_black rounded-md active:bg-zinc-700'
-                      btnIcon='/play.svg'
+                      btnIcon={play}
                   />
               </div>
               <div className='flex gap-4 mt-10 bg-zinc-800 p-5 rounded-md'>
