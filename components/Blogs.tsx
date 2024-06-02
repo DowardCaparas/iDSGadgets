@@ -7,7 +7,7 @@ import { blogs } from '@/constants';
 const Blogs = () => {
 
   return (
-    <section className='w-full min-h-screen padding' id='blog'>
+    <section className='w-full padding' id='blog'>
        <h3 className='text-slate-500 font-semibold'>Latest News & Blogs</h3>
 
         <div className='grid md:grid-cols-3 grid-flow-row gap-4 grid-cols-2 mt-8'>

@@ -15,13 +15,13 @@ const Hero = () => {
               </span>
               <div className='flex gap-4 mt-4'>
                   <CustomButton 
-                      title="Buy Now"
-                      containerStyles="px-8 rounded-md py-2 bg-white hover:bg-slate-300 active:bg-slate-200"
-                      textStyles="text-slate-500 font-semibold"
+                      title='Buy Now'
+                      containerStyles='px-8 rounded-md py-2 bg-white hover:bg-slate-300 active:bg-slate-200'
+                      textStyles='text-slate-500 font-semibold'
                   />
                   <CustomButton 
-                      title="Watch Video"
-                      textStyles="text-slate-200"
+                      title='Watch Video'
+                      textStyles='text-slate-200'
                       containerStyles='flex gap-2 p-2 hover:bg-primary_black rounded-md active:bg-zinc-700'
                       btnIcon='/play.svg'
                   />

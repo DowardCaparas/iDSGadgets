@@ -10,11 +10,11 @@ const CustomButton = ({title, containerStyles, textStyles, btnIcon}: CustomButto
           className={`${containerStyles}`}
       >
           {btnIcon && (
-        <div className="relative w-7 h-7">
+        <div className='relative w-7 h-7'>
             <Image
                 src={btnIcon}
-                alt="arrow_left"
-                className="object-contain"
+                alt='arrow_left'
+                className='object-contain'
                 layout='fill'
                 style={{
                     maxWidth: '100%',

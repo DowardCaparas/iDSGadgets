@@ -4,7 +4,7 @@ import FeaturedProducts from './FeaturedProducts';
 
 const Products = () => {
   return (
-    <section className='w-full min-h-screen padding' id='products'>
+    <section className='w-full padding' id='products'>
         <div>
             <ProductCard />
             <FeaturedProducts />
