@@ -10,8 +10,9 @@ const Hero = () => {
               <h1 className='lg:text-8xl font-bold text-6xl max-sm:text-4xl'>Create the future</h1>
               <div className='h-1 w-1/2 bg-primary_cyan'></div>
               <span className='flex flex-col justify-center items-center text-slate-200'>
-                  <p>Bridge the gap between creativity and productivity with</p>
-                  <p>the most powerful VR-ready machines</p>
+                  <p className='max-md:text-sm flex items-center justify-center w-2/3'>
+                    Bridge the gap between creativity and productivity with 
+                    the most powerful VR-ready machines</p>
               </span>
               <div className='flex gap-4 mt-4'>
                   <CustomButton 
