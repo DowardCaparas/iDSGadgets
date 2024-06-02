@@ -27,7 +27,7 @@ const Hero = () => {
                   />
               </div>
               <div className='flex gap-4 mt-10 bg-zinc-800 p-5 rounded-md'>
-                  <div className='flex justify-start items-start px-2'>
+                  <div className='flex justify-start items-center px-4'>
                       <Image
                           src={dollar}
                           alt='dollar icon'
@@ -44,7 +44,7 @@ const Hero = () => {
                       </span>
                   </div>
 
-                  <div className='flex justify-start items-start px-2'>
+                  <div className='flex justify-start items-center px-4'>
                       <Image
                           src={wallet}
                           alt='wallet icon'
