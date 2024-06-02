@@ -1,12 +1,8 @@
 
-import { ProductProps } from '@/types';
 import Image from 'next/legacy/image';
+import { products } from '@/constants';
 
-interface ProductListProps {
-    products: ProductProps[]
-}
-
-const ProductCard = ({products}: ProductListProps) => {
+const ProductCard = () => {
   return(
     <div className='w-full'>
         <h3 className='text-slate-500 font-semibold'>Our Products</h3>

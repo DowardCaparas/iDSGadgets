@@ -1,13 +1,12 @@
 import Image from 'next/legacy/image';
 import CustomButton from './CustomButton';
-import { iPadPro } from '@/public/images';
 
 const About = () => {
   return (
       <section className='w-full padding black_gradient relative' id='about'>
           <div className="flex-between max-lg:flex-col gap-4 mt-5">
                   <Image
-                      src= {iPadPro}
+                      src= '/images/laptop.png'
                       alt='laptop'
                       width={500}
                       height={450}

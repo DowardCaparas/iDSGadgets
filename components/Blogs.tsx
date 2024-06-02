@@ -1,12 +1,10 @@
-import { BlogProps } from '@/types';
+
 import Image from 'next/legacy/image';
 import CustomButton from './CustomButton';
+import { blogs } from '@/constants';
 
-interface BlogListProps {
-  blogs: BlogProps[]
-}
 
-const Blogs = ({blogs}: BlogListProps) => {
+const Blogs = () => {
 
   return (
     <section className='w-full min-h-screen padding' id='blog'>

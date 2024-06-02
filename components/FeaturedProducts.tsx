@@ -1,15 +1,10 @@
 'use client';
 
-import { Gadget } from '@/types';
 import Image from 'next/legacy/image';
 import { useState } from 'react';
+import { gadgets } from '@/constants';
 
-interface GadgetListProps {
-    gadgets: Gadget[]
-}
-
-
-const FeaturedProducts = ({ gadgets }: GadgetListProps) => {
+const FeaturedProducts = () => {
     
    const [showall, setShowall] = useState(false);
    

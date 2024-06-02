@@ -1,5 +1,4 @@
 import { Products, Hero, About, Blogs} from '@/components';
-import { blogs } from '@/constants';
 
 export default function Home() {
 
@@ -9,7 +8,7 @@ export default function Home() {
       <Hero />
       <Products />
       <About />
-      <Blogs blogs={blogs}/>
+      <Blogs />
       
     </main>
   );
