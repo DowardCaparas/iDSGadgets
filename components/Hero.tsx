@@ -4,7 +4,7 @@ import { wallet, dollar } from '@/public';
 
 const Hero = () => {
   return (
-      <section className='black_gradient min-h-screen padding z-10' id='home'>
+      <section className='black_gradient padding z-10' id='home'>
 
           <div className='flex flex-col justify-center items-center gap-6 mt-28 z-10 text-white'>
               <h1 className='lg:text-8xl font-bold text-6xl max-sm:text-4xl'>Create the future</h1>
