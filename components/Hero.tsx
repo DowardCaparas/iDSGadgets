@@ -27,36 +27,36 @@ const Hero = () => {
                   />
               </div>
               <div className='flex gap-4 mt-10 bg-zinc-800 p-5 rounded-md'>
-                  <div className='flex justify-start items-center px-4'>
+                  <div className='flex justify-start items-start px-2'>
                       <Image
                           src={dollar}
                           alt='dollar icon'
                           width={35}
                           height={35}
-                          className='object-contain'
+                          className='object-contain px-2'
                           style={{
                               maxWidth: '100%',
                               height: 'auto',
                           }} />
-                      <span className='font-semibold md:text-lg'>100% Money back
-                          <p className='font-normal text-slate-200 text-sm'>
+                      <span className='font-semibold md:text-lg text-sm'>100% Money back
+                          <p className='font-normal text-slate-200 text-[12px]'>
                               You have 10 days to get refund</p>
                       </span>
                   </div>
 
-                  <div className='flex justify-start items-center px-4'>
+                  <div className='flex justify-start items-start px-2'>
                       <Image
                           src={wallet}
                           alt='wallet icon'
                           width={35}
                           height={35}
-                          className='object-contain'
+                          className='object-contain px-2'
                           style={{
                               maxWidth: '100%',
                               height: 'auto'
                           }} />
-                      <span className='font-semibold md:text-lg'>100% Payment Security
-                          <p className='font-normal text-slate-200 text-sm'>
+                      <span className='font-semibold md:text-lg text-sm'>100% Payment Security
+                          <p className='font-normal text-slate-200 text-[12px]'>
                               Your payments are safe with us</p>
                       </span>
                   </div>
