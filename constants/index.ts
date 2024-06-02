@@ -1,4 +1,7 @@
-import { home, box, info, newspaper, phone } from "@/public";
+import { home, box, info, newspaper, phone, facebook, twitter, linkedin, instagram,    
+} from "@/public";
+
+import { BlogProps } from "@/types";
 
 export const navLinks = [
   { url: "#home", label: "Home", imgICON: home },
@@ -39,10 +42,10 @@ export const footerLinks = [
 ];
 
 export const socials = [
-  { iconLogo: "/facebook.svg", label: "facebook logo" },
-  { iconLogo: "/twitter.svg", label: "twitter logo" },
-  { iconLogo: "/linkedin.svg", label: "linkedin logo" },
-  { iconLogo: "/instagram.svg", label: "instagram logo" },
+  { iconLogo: facebook, label: "facebook icon" },
+  { iconLogo: twitter, label: "twitte icon" },
+  { iconLogo: linkedin, label: "linkedin icon"  },
+  { iconLogo: instagram, label: "instagram icon" },
 ];
 
 export const gadgets = [
@@ -54,7 +57,7 @@ export const gadgets = [
       oldPrice: 830,
       description: "wasdwasd wewecawec awecnUWrhvwqr vwernvwer",
     },
-    deviceIMG: "/images/xbox.png",
+    deviceIMG: '/images/xbox.png',
   },
 
   {
@@ -65,7 +68,7 @@ export const gadgets = [
       oldPrice: 840,
       description: "wasdwasd wewecawec awecnUWrhvwqr vwernvwer",
     },
-    deviceIMG: "/images/drone.png",
+    deviceIMG: '/images/drone.png',
   },
 
   {
@@ -76,7 +79,7 @@ export const gadgets = [
       oldPrice: 543,
       description: "wasdwasd wewecawec awecnUWrhvwqr vwernvwer",
     },
-    deviceIMG: "/images/headphone.png",
+    deviceIMG: '/images/headphone.png',
   },
 
   {
@@ -87,7 +90,7 @@ export const gadgets = [
       oldPrice: 595,
       description: "wasdwasd wewecawec awecnUWrhvwqr vwernvwer",
     },
-    deviceIMG: "/images/watch.png",
+    deviceIMG: '/images/watch.png',
   },
 
   {
@@ -98,7 +101,7 @@ export const gadgets = [
       oldPrice: 370,
       description: "wasdwasd wewecawec awecnUWrhvwqr vwernvwer",
     },
-    deviceIMG: "/images/headset.png",
+    deviceIMG: '/images/headset.png',
   },
 
   {
@@ -109,28 +112,30 @@ export const gadgets = [
       oldPrice: 495,
       description: "wasdwasd wewecawec awecnUWrhvwqr vwernvwer",
     },
-    deviceIMG: "/images/mouse.png",
+    deviceIMG: '/images/mouse.png',
   },
 ];
 
 export const products = [
-  { imgurl: "/images/speaker.png", title: "Speakers" },
-  { imgurl: "/images/laptop.png", title: "Laptops" },
-  { imgurl: "/images/gamingPC.png", title: "Gaming" },
-  { imgurl: "/images/camera.png", title: "Cameras" },
+  { imgurl: '/images/speaker.png', title: "Speakers" },
+  { imgurl: '/images/laptop.png', title: "Laptops" },
+  { imgurl: '/images/gamingPC.png', title: "Gaming" },
+  { imgurl: '/images/camera.png', title: "Cameras" },
 ];
 
-export const blogs = [
+export const blogs: BlogProps[] = [
   {
-    imgURL: "/images/xboxBG.png",
+    imgURL: '/images/xbox.png',
     title: "Xbox One Game Controllers Mon-sters Hunter",
     date: "24 August 2022",
   },
-
-  { imgURL: "/images/vr.png", title: "Virtual Reality", date: "28 April 2020" },
-
   {
-    imgURL: "/images/cameraBG.png",
+    imgURL: '/images/vr.png',
+    title: "Virtual Reality",
+    date: "28 April 2020",
+  },
+  {
+    imgURL: 'images//cameraBG.png',
     title: "Camera Nikon AF NIKKOR",
     date: "14 February 2023",
   },

@@ -1,5 +1,6 @@
 import Image from 'next/legacy/image';
 import CustomButton from './CustomButton';
+import { wallet, dollar } from '@/public';
 
 const Hero = () => {
   return (
@@ -28,7 +29,7 @@ const Hero = () => {
               <div className='flex gap-4 mt-10 bg-zinc-800 p-5 rounded-md'>
                   <div className='flex justify-start items-start px-2'>
                       <Image
-                          src='${basePath}/dollar.svg'
+                          src={dollar}
                           alt='dollar icon'
                           width={35}
                           height={35}
@@ -45,7 +46,7 @@ const Hero = () => {
 
                   <div className='flex justify-start items-start px-2'>
                       <Image
-                          src='${basePath}/wallet.svg'
+                          src={wallet}
                           alt='wallet icon'
                           width={35}
                           height={35}
