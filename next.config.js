@@ -5,7 +5,7 @@
     const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-    basePath: isProd ? '/basePath' : '',
+    basePath: isProd ? '/iDSGadgets' : '',
     output: 'export',
     distDir: 'dist',
     images: {
