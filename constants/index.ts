@@ -1,10 +1,10 @@
 
 export const navLinks = [
-    {url: '#home', label: 'Home' , imgICON: '${basePath}/home.svg'},
-    {url: '#products', label: 'Products', imgICON: '${basePath}/box.svg'},
-    {url: '#about', label: 'About Us', imgICON: '${basePath}/info.svg'},
-    {url: '#blog', label: 'Blog', imgICON: '${basePath}/newspaper.svg'},
-    {url: '#contact', label: 'Contact Us', imgICON: '${basePath}/phone.svg'},
+    {url: '#home', label: 'Home' , imgICON: '/basePath/home.svg'},
+    {url: '#products', label: 'Products', imgICON: '/basePath/box.svg'},
+    {url: '#about', label: 'About Us', imgICON: '/basePath/info.svg'},
+    {url: '#blog', label: 'Blog', imgICON: '/basePath/newspaper.svg'},
+    {url: '#contact', label: 'Contact Us', imgICON: '/basePath/phone.svg'},
 ];
 
 export const footerLinks = [
@@ -38,10 +38,10 @@ export const footerLinks = [
   ];
 
   export const socials =[
-    {iconLogo: '${basePath}/facebook.svg', label: 'facebook logo'},
-    {iconLogo: '${basePath}/twitter.svg', label: 'twitter logo'},
-    {iconLogo: '${basePath}/linkedin.svg', label: 'linkedin logo'},
-    {iconLogo: '${basePath}/instagram.svg', label: 'instagram logo'}
+    {iconLogo: '/basePath/facebook.svg', label: 'facebook logo'},
+    {iconLogo: '/basePath/twitter.svg', label: 'twitter logo'},
+    {iconLogo: '/basePath/linkedin.svg', label: 'linkedin logo'},
+    {iconLogo: '/basePath/instagram.svg', label: 'instagram logo'}
   ];
 
   export const gadgets = [
@@ -53,7 +53,7 @@ export const footerLinks = [
             oldPrice: 830,
             description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer'
         },
-        deviceIMG: '${basePath}/images/xbox.png'
+        deviceIMG: '/basePath/images/xbox.png'
     },
 
     {
@@ -64,7 +64,7 @@ export const footerLinks = [
             oldPrice: 840,
             description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer'
         },
-        deviceIMG: '${basePath}/images/drone.png'
+        deviceIMG: '/basePath/images/drone.png'
     },
 
     {
@@ -75,7 +75,7 @@ export const footerLinks = [
             oldPrice: 543,
             description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer'
         },
-        deviceIMG: '${basePath}/images/headphone.png'
+        deviceIMG: '/basePath/images/headphone.png'
     },
 
     {
@@ -86,7 +86,7 @@ export const footerLinks = [
             oldPrice: 595,
             description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer'
         },
-        deviceIMG: '${basePath}/images/watch.png'
+        deviceIMG: '/basePath/images/watch.png'
     },
 
     {
@@ -97,7 +97,7 @@ export const footerLinks = [
             oldPrice: 370,
             description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer'
         },
-        deviceIMG: '${basePath}/images/headset.png'
+        deviceIMG: '/basePath/images/headset.png'
     },
 
     {
@@ -108,30 +108,30 @@ export const footerLinks = [
             oldPrice: 495,
             description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer'
         },
-        deviceIMG: '${basePath}/images/mouse.png'
+        deviceIMG: '/basePath/images/mouse.png'
     },
 
 ];
 
   export const products = [
-    {imgurl: '${basePath}/images/speaker.png', title: 'Speakers'},
-    {imgurl: '${basePath}/images/laptop.png', title: 'Laptops'},
-    {imgurl: '${basePath}/images/gamingPC.png', title: 'Gaming'},
-    {imgurl: '${basePath}/images/camera.png', title: 'Cameras'},
+    {imgurl: '/basePath/images/speaker.png', title: 'Speakers'},
+    {imgurl: '/basePath/images/laptop.png', title: 'Laptops'},
+    {imgurl: '/basePath/images/gamingPC.png', title: 'Gaming'},
+    {imgurl: '/basePath/images/camera.png', title: 'Cameras'},
   ];
 
   export const blogs = [
-    {imgURL: '${basePath}/images/xboxBG.png', 
+    {imgURL: '/basePath/images/xboxBG.png', 
      title: 'Xbox One Game Controllers Mon-sters Hunter',
      date: '24 August 2022'
     },
 
-    {imgURL: '${basePath}/images/vr.png', 
+    {imgURL: '/basePath/images/vr.png', 
      title: 'Virtual Reality',
      date: '28 April 2020'
     },
     
-    {imgURL: '${basePath}/images/cameraBG.png', 
+    {imgURL: '/basePath/images/cameraBG.png', 
      title: 'Camera Nikon AF NIKKOR',
      date: '14 February 2023'
     },
