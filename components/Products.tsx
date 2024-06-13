@@ -4,12 +4,11 @@ import FeaturedProducts from './FeaturedProducts';
 
 const Products = () => {
   return (
-    <section className='w-full padding' id='products'>
-        <div>
+        <div id='products' className='w-full container__padding'>
             <ProductCard />
             <FeaturedProducts />
         </div>
-    </section>
+
   );
 };
 

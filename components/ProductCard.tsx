@@ -1,11 +1,12 @@
 
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import { products } from '@/constants';
 
 const ProductCard = () => {
   return(
     <div className='w-full'>
         <h3 className='text-slate-500 font-semibold'>Our Products</h3>
+       
         <div className='grid md:grid-cols-3 grid-flow-row gap-4 grid-cols-2'>
 
             {products.map((item, index) => (

@@ -1,7 +1,7 @@
 'use client';
 
 import { cart } from '@/public';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 
 const AddtoCartButton = () => {
   return (
@@ -9,10 +9,10 @@ const AddtoCartButton = () => {
         <Image
           src={cart}
           alt='cart button'
-          style={{
-            maxWidth: '100%',
-            height: 'auto'
-          }} />
+          height={25}
+          width={25}
+          className='object-contain'
+         />
     </button>
   );
 };

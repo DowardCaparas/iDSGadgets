@@ -2,11 +2,10 @@ import { home, box, info, newspaper, phone, facebook, twitter, linkedin, instagr
 } from '@/public';
 
 import { camera, cameraBG, drone, gamingPC, headphone, headset, 
-         laptop, mouse, speaker, vr, watch, xbox,     
+         laptop, mouse, speaker, vr, watch, xbox, xboxBG,     
  } from '@/public/images';
 
 export const navLinks = [
-  { url: '#home', label: 'Home', imgICON: home },
   { url: '#products', label: 'Products', imgICON: box },
   { url: '#about', label: 'About Us', imgICON: info },
   { url: '#blog', label: 'Blog', imgICON: newspaper },
@@ -35,10 +34,10 @@ export const footerLinks = [
   {
     title: 'Contact',
     links: [
-      { title: '(+021) 254 4458 187', url: '/' },
-      { title: 'info@email.com', url: '/' },
+      { title: '(+63) 967 925 4056', url: '/' },
+      { title: 'dsshoplab@email.com', url: '/' },
       { title: 'Twitter', url: '/' },
-      { title: '564 Kingstreate, Mailbourne', url: '/' },
+      { title: 'Tiktok', url: '/' },
     ],
   },
 ];
@@ -57,9 +56,10 @@ export const gadgets = [
       name: 'Xbox One Game Controllers Mon-ster Hunter',
       currentPrice: 750,
       oldPrice: 830,
-      description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae non possimus ipsum nisi explicabo cumque esse harum. Nobis autem a dolor architecto voluptas assumenda deserunt necessitatibus nemo magni tempore!',
+      deviceIMG: xbox,
     },
-    deviceIMG: xbox,
+    
   },
 
   {
@@ -68,9 +68,10 @@ export const gadgets = [
       name: 'Yuneec International Pro aerial vehicle Gimbal',
       currentPrice: 630,
       oldPrice: 840,
-      description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae non possimus ipsum nisi explicabo cumque esse harum. Nobis autem a dolor architecto voluptas assumenda deserunt necessitatibus nemo magni tempore!',
+      deviceIMG: drone,
     },
-    deviceIMG: drone,
+    
   },
 
   {
@@ -79,9 +80,10 @@ export const gadgets = [
       name: 'Blue Beats by  Dr. Dre Beats Studio, Noise-cancelling',
       currentPrice: 480,
       oldPrice: 543,
-      description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae non possimus ipsum nisi explicabo cumque esse harum. Nobis autem a dolor architecto voluptas assumenda deserunt necessitatibus nemo magni tempore!',
+      deviceIMG: headphone,
     },
-    deviceIMG: headphone,
+    
   },
 
   {
@@ -90,9 +92,10 @@ export const gadgets = [
       name: 'Apple Watch Series 3 Apple Watch Series 2 SmartWatch',
       currentPrice: 516,
       oldPrice: 595,
-      description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae non possimus ipsum nisi explicabo cumque esse harum. Nobis autem a dolor architecto voluptas assumenda deserunt necessitatibus nemo magni tempore!',
+      deviceIMG: watch,
     },
-    deviceIMG: watch,
+    
   },
 
   {
@@ -101,9 +104,10 @@ export const gadgets = [
       name: 'Xbox 360 Wireless Headset Headphones Bluetooth',
       currentPrice: 322,
       oldPrice: 370,
-      description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae non possimus ipsum nisi explicabo cumque esse harum. Nobis autem a dolor architecto voluptas assumenda deserunt necessitatibus nemo magni tempore!',
+      deviceIMG: headset,
     },
-    deviceIMG: headset,
+    
   },
 
   {
@@ -112,9 +116,10 @@ export const gadgets = [
       name: 'Apple Wireless Mouse Logitech MX Master 2S',
       currentPrice: 460,
       oldPrice: 495,
-      description: 'wasdwasd wewecawec awecnUWrhvwqr vwernvwer',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae non possimus ipsum nisi explicabo cumque esse harum. Nobis autem a dolor architecto voluptas assumenda deserunt necessitatibus nemo magni tempore!',
+      deviceIMG: mouse,
     },
-    deviceIMG: mouse,
+    
   },
 ];
 
@@ -127,7 +132,7 @@ export const products = [
 
 export const blogs = [
   {
-    imgURL: xbox,
+    imgURL: xboxBG,
     title: 'Xbox One Game Controllers Mon-sters Hunter',
     date: '24 August 2022',
   },

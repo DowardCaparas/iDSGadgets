@@ -1,7 +1,7 @@
 'use client';
 
 import { IconProps } from '@/types';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 
 const Icon = ({imageUrl, imageAlt}: IconProps) => {
   return (
@@ -10,10 +10,7 @@ const Icon = ({imageUrl, imageAlt}: IconProps) => {
       width={25}
       height={25}
       alt={imageAlt}
-      style={{
-        maxWidth: '100%',
-        height: 'auto'
-      }} />
+    />
   );
 };
 

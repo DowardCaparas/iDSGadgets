@@ -2,8 +2,9 @@
 export interface CustomButtonProps {
     title: string;
     containerStyles?: string;
-    textStyles: string;
+    textStyles?: string;
     btnIcon?: string;
+    label: string;
 }
 
 export interface GadgetDetails {
@@ -11,6 +12,7 @@ export interface GadgetDetails {
     currentPrice: number;
     oldPrice: number;
     description: string;
+    deviceIMG: string;
 }
 
 export interface IconProps {

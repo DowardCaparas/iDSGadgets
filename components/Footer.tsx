@@ -1,15 +1,17 @@
 import { footerLinks, socials } from '@/constants';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
   return (
     <>
-      <footer className='bg-primary_black relative padding' id='contact'>
-        <div className='footer'>
+      <footer className='bg-zinc-950 relative container__padding' id='contact'>
+        <div className='flex justify-between flex-wrap gap-6 text-white py-14'>
           {/*Footer Left */}
           <div className='flex flex-col justify-start items-start gap-6 lg:w-1/3'>
-            <h1 className='font-bold sm:text-2xl text-xl'>iDSGadgets</h1>
+            <Link href='/' aria-label='Go to home'>
+              <h1 className='font-bold sm:text-2xl text-xl'>iDSGadgets</h1>
+            </Link>
             <p className='text-primary_gray'>
               Elevate your tech game with top-tier gadgets, where innovation
               meets quality.
@@ -23,10 +25,6 @@ const Footer = () => {
                   width={25}
                   height={25}
                   className='green_gradient rounded p-1'
-                  style={{
-                    maxWidth: '100%',
-                    height: 'auto',
-                  }}
                 />
               ))}
             </div>
@@ -34,17 +32,20 @@ const Footer = () => {
 
           {/*Links */}
           <div className='flex lg:gap-32 gap-10 flex-wrap'>
-            {footerLinks.map((item) => (
-              <div key={item.title}>
+            {footerLinks.map((item, index) => (
+              <div key={index}>
                 <h3 className='font-bold'>{item.title}</h3>
                 <div className='flex flex-col mt-5 gap-3'>
                   {item.links.map((link) => (
                     <Link
                       key={link.title}
                       href={link.url}
+                      aria-label='link'
                       className='text-secondary_gray'
                     >
-                      {link.title}
+                      <span className='hover:text-white'>
+                         {link.title}
+                      </span>
                     </Link>
                   ))}
                 </div>
@@ -54,11 +55,11 @@ const Footer = () => {
         </div>
       </footer>
       <div
-        className='bg-primary_black flex items-center justify-center py-6 
-   border-t-2 border-secondary_gray'
+        className='bg-zinc-950 flex items-center justify-center py-6 
+   border-t border-secondary_gray'
       >
         <p className='text-secondary_gray max-sm:text-sm'>
-          Copyright By Doward Caparas &copy; 2024 All Rights Reserved
+        &copy; 2024 Dounhuward Caparas All Rights Reserved.
         </p>
       </div>
     </>

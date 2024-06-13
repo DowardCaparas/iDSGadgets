@@ -1,11 +1,9 @@
 'use client';
 
 import { navLinks } from '@/constants';
-import { person, search } from '@/public';
-import Icon from './Icon';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import { motion, useAnimationControls } from 'framer-motion';
 
 const NavBar = () => {
@@ -32,7 +30,28 @@ const NavBar = () => {
     },
   };
 
+  {
+    /*End for opening the navigation panel */
+  }
 
+  // adding background when scrolled
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollY > 0 ? setScrolled(true) : setScrolled(false);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // end of adding background when scrolled
+
+ /*Tap anywhere to close nav panel*/
   const containerControls = useAnimationControls();
 
   useEffect(() => {
@@ -42,6 +61,7 @@ const NavBar = () => {
       containerControls.start('close');
     }
   }, [open, containerControls]);
+  
 
   /*End of Animating navigation panel */
 
@@ -60,21 +80,7 @@ const NavBar = () => {
     };
   }, [open]);
 
-  {
-    /*for adding navigation background when scrolled */
-  }
-  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      window.scrollY > 0 ? setScrolled(true) : setScrolled(false);
-    };
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   {
     /*Close the nav panel when the open state is false */
@@ -84,30 +90,28 @@ const NavBar = () => {
   };
 
   return (
-    <header className='absolute z-50 w-full'>
+    <header className='w-full'>
       <nav
-        className={`fixed top-0 left-0 w-full flex justify-between
-          items-center xl:px-28 lg:px-20 px-6 py-8 text-white gap-3 transition duration-300
-          
-          ${
-            scrolled
-              ? 'bg-zinc-900 bg-opacity-70 backdrop-blur-md border-b border-b-gray-800'
-              : ''
-          }
-          
-          `}
+        className={`fixed top-0 z-50  w-full flex justify-between first-letter:items-center 
+        py-8 text-white gap-3 transition duration-300 nav__padding
+        
+          ${scrolled ? 'bg-zinc-900 bg-opacity-70 backdrop-blur-xl border-b-2 border-primary_cyan' : ''}
+
+        `}
       >
-        <h3 className='font-bold'>iDSGadgets</h3>
+        <Link
+          href='/'
+          aria-label='Go to home'
+        >
+          <h1 className='font-bold sm:text-2xl text-xl'>iDSGadgets</h1>
+
+        </Link>
         <div className='flex gap-10 max-md:hidden'>
           {navLinks.map((link) => (
             <Link href={link.url} key={link.label}>
               <span className='hover:text-slate-300'>{link.label}</span>
             </Link>
           ))}
-        </div>
-        <div className='flex gap-2 max-md:hidden'>
-          <Icon imageUrl={search} imageAlt='search icon' />
-          <Icon imageUrl={person} imageAlt='user icon' />
         </div>
 
         <div className='hidden max-md:flex z-10'>
@@ -129,8 +133,8 @@ const NavBar = () => {
           variants={containerVariants}
           animate={containerControls}
           initial='close'
-          className='nav_panel h-full bg-slate-100 flex flex-col padding justify-start fixed right-0 
-          items-start md:hidden border-r-2 border-slate-500 gap-4'
+          className='z-50 h-full bg-slate-100 flex flex-col padding justify-start fixed right-0 
+          items-start md:hidden border-r-2 border-slate-500 gap-4 top-0'
         >
           {navLinks.map((link) => (
             <div
@@ -142,10 +146,7 @@ const NavBar = () => {
                 alt='nav icon'
                 width={25}
                 height={25}
-                style={{
-                  maxWidth: '100%',
-                  height: 'auto',
-                }}
+                className='object-contain'
               />
 
               <Link
