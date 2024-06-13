@@ -35,7 +35,7 @@ const NavBar = () => {
   }
 
   // adding background when scrolled
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
