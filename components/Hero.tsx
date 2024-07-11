@@ -43,12 +43,12 @@ const Hero = () => {
                 height={40}
                 className='object-contain'
               />
-              <p className='font-semibold md:text-md text-sm'>
+              <span className='font-semibold md:text-md text-sm'>
                 100% Money back
                 <p className='font-normal text-slate-200 text-[12px]'>
                   You have 10 days to get refund
                 </p>
-              </p>
+              </span>
             </div>
 
             <div className='flex justify-start items-start'>
@@ -73,9 +73,9 @@ const Hero = () => {
       <Image
           src={heroBG}
           alt='Hero image'
-          height={610}
-          width={600}
-          className='object-contain'
+          height={100}
+          width={100}
+          className='object-contain w-full'
           quality={100}
         />
       </div>

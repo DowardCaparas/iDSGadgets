@@ -24,7 +24,7 @@ const ProductCard = () => {
                         alt={item.title}
                         height={200}
                         width={200}
-                        className='object-contain'
+                        className='object-contain w-1/2'
                     />
                     </div>
                    

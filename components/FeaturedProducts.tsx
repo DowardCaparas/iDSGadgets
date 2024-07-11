@@ -1,11 +1,10 @@
+'use client'
 
 import Image from 'next/image';
 import { gadgets } from '@/constants';
 import Link from 'next/link';
 
 const FeaturedProducts = () => {
-
-
     return (
         <div className='w-full mt-14 gap-4 flex flex-col'>
             <h3 className='text-slate-500 font-semibold'>Featured Products</h3>
@@ -28,7 +27,7 @@ const FeaturedProducts = () => {
                                     alt={item.details.name}
                                     width={250}
                                     height={250}
-                                    className='object-contain place-self-center'
+                                    className='object-contain place-self-center w-full'
                                     quality={100}
                                 />
                             </div>

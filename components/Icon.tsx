@@ -1,5 +1,3 @@
-'use client';
-
 import { IconProps } from '@/types';
 import Image from 'next/image';
 

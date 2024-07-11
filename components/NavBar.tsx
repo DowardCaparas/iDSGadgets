@@ -134,12 +134,13 @@ const NavBar = () => {
           animate={containerControls}
           initial='close'
           className='z-50 h-full bg-slate-100 flex flex-col padding justify-start fixed right-0 
-          items-start md:hidden border-r-2 border-slate-500 gap-4 top-0'
+          items-start md:hidden border-r-2 border-slate-500 gap-4'
         >
+          <div className='mt-6 p-5'>
           {navLinks.map((link) => (
             <div
               key={link.label}
-              className='flex item-center justify-center gap-2'
+              className='flex item-center justify-start gap-2 mt-5'
             >
               <Image
                 src={link.imgICON}
@@ -158,6 +159,7 @@ const NavBar = () => {
               </Link>
             </div>
           ))}
+          </div>
         </motion.div>
       )}
     </header>
